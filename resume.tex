@@ -1,92 +1,142 @@
-\documentclass{resume} 
-\usepackage{hyperref}
-\usepackage{multicol}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=blue,
-}
-\usepackage[left=0.25in,top=0.3in,right=0.25in,bottom=0.6in]{geometry} 
-\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
-\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{\normalsize{Maxim Lavrenko}} % Your name
-\address{ mlavrenk@purdue.edu }
-\address{ eternalbirch@gmail.com \\ \href{https://github.com/maxinimus}{maxinimus (Github)}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 3.0 (December 17, 2022)
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	%a4paper, % Uncomment for A4 paper size (default is US letter)
+	11pt, % Default font size, can use 10pt, 11pt or 12pt
+]{resume} % Use the resume class
+
+%\usepackage{ebgaramond} % Use the EB Garamond font
+
+%------------------------------------------------
+
+\name{Maxim Lavrenko} % Your name to appear at the top
+
+% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
+% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
+
+\address{\href{https://github.com/maxinimus}{maxinimus (Github)}} % A secondary address (optional)
+
+\address{mlavrenk@purdue.edu \\ eternalbirch@gmail.com} % Contact information
+
+%----------------------------------------------------------------------------------------
 
 \begin{document}
 
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
 \begin{rSection}{Education}
-
-{\bf Purdue University $\mid$ \small{West Lafyette, IN} } \hfill {\em August 2022 - June 2025} 
-\\ B.S. in Computer Science \hfill { Major GPA: 4.00 / 4.00 }
-\\ B.S. in Mathematics \hfill { Major GPA: 4.00 / 4.00 }
-\\\\ \hspace*{16.22cm} { CGPA: 3.97 / 4.00 }
-\\ Dean's List \& Semester Honors \hfill {\em August 2022 - Present}
-
+	
+	\textbf{Purdue University} \hfill \textit{August 2022 - June 2025} \\ 
+	B.S. in Computer Science \hfill Major GPA: 4.0/4.0 \\
+	B.S. in Mathematics \hfill Major GPA: 4.0/4.0 \\
+	\hspace*{\fill}  CGPA: 3.97/4.0 \\
+	Dean's List \& Semester Honors \hfill {\em August 2022 - Present}
+	
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Coursework
+%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Coursework}
-By the end of Spring 2024, I will have completed the following courses:
-\footnotesize{
-\begin{multicols}{3}
-\begin{itemize}
-  \item Introduction to the Analysis of Algorithms
-  \item Data Structures
-  \item C Programming
-  \item Linear Algebra 1 \& 2 
-  \item Discrete Mathematics
-  \item Object-Oriented Programming
-  \item Computer Architecture
-  \item Systems Programming
-  \item Ordinary Differential Equations
-\end{itemize}
-\end{multicols}
-}
-\vspace*{-0.5cm}
+The following are some of the notable courses I will have completed by Spring 2024: \\
+Introduction to the Analysis of Algorithms
+Data Structures
+C Programming
+Linear Algebra 1 \& 2 
+Discrete Mathematics
+Object-Oriented Programming
+Computer Architecture
+Systems Programming
 
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	CAREER OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Career Objective}
   \small{As a university student deeply passionate about artificial intelligence, software engineering, mathematics, and problem-solving, I aim to gain experience in software enginerring and delve into cutting-edge AI applications and research. Drawing from my academic foundation, I aspire to bridge the gap between theoretical concepts and their transformative impact on society.}
 \end{rSection}
 
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
 \begin{rSection}{Projects}
 
-\small{
-{\bf \href{https://github.com/maxinimus/sofia}{Sofia Chatbot} $\mid$ Python, Poe, Whisper } \hfill {\em July 2023}
-\begin{itemize}
-\item Allows text/voice input to chat with POE bots. Built using a reverse-engineered POE API client.
-\item Capabilites such as TTS, switching POE bot models, clearing history, importing mp3 and others, as well as looking through history.
-\item Uses a reversed engineered POE API, so support is limited.
-\end{itemize}
+	\begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/sofia}{Sofia Chatbot} $\mid$ Python, Poe, Whisper }{\hfill \em July 2023}
+		\item Allows text/voice input to chat with POE bots. Built using a reverse-engineered POE API client.
+		\item Capabilites such as TTS, switching POE bot models, clearing history, importing mp3 and others, as well as looking through history.
+		\item Uses a reversed engineered POE API, so support is limited.	
+	\end{rSubsection}
 
-{\bf \href{https://github.com/maxinimus/LaTeX-Matrix-Calculator}{LaTeX Matrix Calculator Website} $\mid$ Flask, numpy, React, Heroku } \hfill {\em May 2023 }
-\begin{itemize}
-  \item Developed a web application to assist LaTeX users working with matrices and linear algebra.
-  \item Calculates and provides LaTeX code for finding things such as inverse, REF, and more based on LaTeX code of a matrix.
-  \item Built with Flask for the backend and React for the frontend.
-  \item Deployed on Heroku (currently unavailable due to hosting costs).
-\end{itemize}
+%------------------------------------------------
 
-{\bf \href{https://github.com/maxinimus/music-mixer}{Spotify Playlist Mixer} $\mid$ Flask, React, Spotify API} \hfill {\em June - July 2023}
-\begin{itemize}
-  \item Built a web application that utilizes the Spotify API to help users without spotify premium.
-  \item The tool offers shuffling, which enables people to listen to shuffled playlists on their phone without paying for Spotify Premium, as well as reversing a playlist, and more will be added.
-  \item Developed using Flask for the backend and React for the frontend.
-\end{itemize}
-}
+	\begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/LaTeX-Matrix-Calculator}{LaTeX Matrix Calculator Website}$\mid$ Flask, numpy, React, Heroku }{ \hfill \em June - July 2023}
+
+		\item Developed a web application to assist LaTeX users working with matrices and linear algebra.
+		\item Calculates and provides LaTeX code for finding things such as inverse, REF, and more based on LaTeX code of a matrix.
+		\item Built with Flask for the backend and React for the frontend.
+		\item Deployed on Heroku (currently unavailable due to hosting costs).
+	\end{rSubsection}
+
+%------------------------------------------------
+
+	\begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/music-mixer}{Spotify Playlist Mixer} $\mid$ Flask, React, Spotify API}{\hfill \em June - July 2023}
+		\item Built a web application that utilizes the Spotify API to help users without spotify premium.
+		\item The tool offers shuffling, which enables people to listen to shuffled playlists on their phone without paying for Spotify Premium, as well as reversing a playlist, and more will be added.
+		\item Developed using Flask for the backend and React for the frontend.
+	\end{rSubsection}
 
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
 
 \begin{rSection}{Technical Strengths}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Technical Skills \ & Python, C, C++, Java, React.js \\
-Technologies & HTML5, CSS, Latex \\
-Version Control & Github
-\end{tabular}
+	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+		Technical Skills \ & Python, C, C++, Java, React.js, MySQL \\
+		Technologies & HTML5, CSS, Latex \\
+		Version Control & Github
+	\end{tabular}		
 
 \end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+	%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
 
 \end{document}
