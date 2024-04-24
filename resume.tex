@@ -1,3 +1,4 @@
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Medium Length Professional CV
 % LaTeX Template
@@ -5,7 +6,6 @@
 % This template originates from:
 % https://www.LaTeXTemplates.com
 %
-% Author:
 % Vel (vel@latextemplates.com)
 %
 % Original author:
@@ -17,12 +17,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-	%a4paper, % Uncomment for A4 paper size (default is US letter)
-	11pt, % Default font size, can use 10pt, 11pt or 12pt
+    %a4paper, % Uncomment for A4 paper size (default is US letter)
+    11pt, % Default font size, can use 10pt, 11pt, or 12pt
 ]{resume} % Use the resume class
 
 %\usepackage{ebgaramond} % Use the EB Garamond font
@@ -31,112 +31,113 @@
 
 \name{Maxim Lavrenko} % Your name to appear at the top
 
-% You can use the \address command up to 3 times for 3 different addresses or pieces of contact information
-% Any new lines (\\) you use in the \address commands will be converted to symbols, so each address will appear as a single line.
-
 \address{\href{https://github.com/maxinimus}{maxinimus (Github)}} % A secondary address (optional)
 
-\address{mlavrenk@purdue.edu \\ eternalbirch@gmail.com} % Contact information
+\address{(765) 767-1245 \\ redundantbirch@gmail.com} % Contact information
 
 %----------------------------------------------------------------------------------------
 
 \begin{document}
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+%   EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
+\small
 \begin{rSection}{Education}
-	
-	\textbf{Purdue University} \hfill \textit{August 2022 - June 2025} \\ 
-	B.S. in Computer Science \hfill Major GPA: 4.0/4.0 \\
-	B.S. in Mathematics \hfill Major GPA: 4.0/4.0 \\
-	\hspace*{\fill}  CGPA: 3.97/4.0 \\
-	Dean's List \& Semester Honors \hfill {\em August 2022 - Present}
-	
+
+    \textbf{Purdue University} \hfill \textit{August 2022 - May 2025} \\ 
+    B.S. in Computer Science, Machine Learning Track \hfill Major GPA: 4.0/4.0 \\
+    B.S. in Mathematics \hfill Major GPA: 4.0/4.0 \\
+    \hspace*{\fill}  CGPA: 3.98/4.0 \\
+    Dean's List \& Semester Honors \hfill {\em August 2022 - Present} 
+    
+\end{rSection}
+\vspace*{-0.5cm}
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Work Experience}
+    \begin{rSubsection}
+        {\href{https://www.cs.purdue.edu/academic-programs/courses/canonical/cs250.html}
+        {Purdue University}}
+        {January 2024 - Present}
+        {Undergraduate Teaching Assistant for Computer Architecture}{}
+
+        \item Facilitated weekly labs, assisting and assessing student projects in CS 25000.
+        \item Provided office hour support and project grading.
+    \end{rSubsection}
+
+    \begin{rSubsection}
+        {\href{https://www.cs.purdue.edu/academic-programs/courses/canonical/cs182.html}
+        {Purdue University}}
+        {January 2024 - Present}
+        {Undergraduate Teaching Assistant for Foundations of Computer Science}{}
+
+        \item Supported students during office hours and in PSO sessions for CS 18200.
+        \item Managed the grading of approximately 400 weekly homework submissions.
+    \end{rSubsection}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	Coursework
+%   PROJECTS SECTION
 %----------------------------------------------------------------------------------------
-
-\begin{rSection}{Coursework}
-The following are some of the notable courses I will have completed by Spring 2024: \\
-Introduction to the Analysis of Algorithms
-Data Structures
-C Programming
-Linear Algebra 1 \& 2 
-Discrete Mathematics
-Object-Oriented Programming
-Computer Architecture
-Systems Programming
-
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	CAREER OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
-
-\begin{rSection}{Career Objective}
-  \small{As a university student deeply passionate about artificial intelligence, software engineering, mathematics, and problem-solving, I aim to gain experience in software enginerring and delve into cutting-edge AI applications and research. Drawing from my academic foundation, I aspire to bridge the gap between theoretical concepts and their transformative impact on society.}
-\end{rSection}
-
-%----------------------------------------------------------------------------------------
-%	PROJECTS SECTION
-%----------------------------------------------------------------------------------------
-
+%\vspace*{-0.4cm}
 \begin{rSection}{Projects}
+%\vspace*{-0.4cm}
 
-	\begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/sofia}{Sofia Chatbot} $\mid$ Python, Poe, Whisper }{\hfill \em July 2023}
-		\item Allows text/voice input to chat with POE bots. Built using a reverse-engineered POE API client.
-		\item Capabilites such as TTS, switching POE bot models, clearing history, importing mp3 and others, as well as looking through history.
-		\item Uses a reversed engineered POE API, so support is limited.	
-	\end{rSubsection}
+    \begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/LaTeX-Matrix-Calculator}{LaTeX Matrix Calculator Website} $\mid$ Flask, numpy, React, Heroku }{ \hfill \em June - July 2023}
 
-%------------------------------------------------
+        \item Engineered a web application for LaTeX users to manage matrices and linear algebra operations.
+        \item Provided LaTeX code generation for matrix operations, using Flask and React.
+        \item Deployed on Heroku, optimizing for usability and access (currently inactive due to hosting costs).
+    \end{rSubsection}
 
-	\begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/LaTeX-Matrix-Calculator}{LaTeX Matrix Calculator Website}$\mid$ Flask, numpy, React, Heroku }{ \hfill \em June - July 2023}
-
-		\item Developed a web application to assist LaTeX users working with matrices and linear algebra.
-		\item Calculates and provides LaTeX code for finding things such as inverse, REF, and more based on LaTeX code of a matrix.
-		\item Built with Flask for the backend and React for the frontend.
-		\item Deployed on Heroku (currently unavailable due to hosting costs).
-	\end{rSubsection}
-
-%------------------------------------------------
-
-	\begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/music-mixer}{Spotify Playlist Mixer} $\mid$ Flask, React, Spotify API}{\hfill \em June - July 2023}
-		\item Built a web application that utilizes the Spotify API to help users without spotify premium.
-		\item The tool offers shuffling, which enables people to listen to shuffled playlists on their phone without paying for Spotify Premium, as well as reversing a playlist, and more will be added.
-		\item Developed using Flask for the backend and React for the frontend.
-	\end{rSubsection}
+    \begin{rSubsection}{}{}{\bf \href{https://github.com/maxinimus/better-housing-bot}{Better Housing Bot} $\mid$ Python, Discord.py, BeautifulSoup }{\hfill \em December 2023}
+        \item Created a Discord bot to streamline the search for on-campus housing at Purdue University.
+        \item Implemented real-time dorm and apartment availability tracking through web scraping.
+        \item Features included automatic updates, a notification mute function, and on-demand checks.
+        \item Assisted several users in securing convenient on-campus housing, avoiding costlier alternatives.
+    \end{rSubsection}
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
+%   EXTRACURRICULAR ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+%\vspace*{-0.4cm}
+\begin{rSection}{Extracurricular Activities}
+%\vspace*{-0.4cm}
+
+    \begin{rSubsection}{}{}{\bf BoilerMake Hackathon X}{\hfill \em January 2022}
+        \item Developed a pollution trend visualization map using plotly, pandas, and HTML in a 36-hour challenge.
+    \end{rSubsection}
+    \begin{rSubsection}{}{}{\bf BoilerMake Hackathon XI}{\hfill \em January 2023}
+        \item Created a web application for enhanced chat experiences, utilizing React, TypeScript, and Go.
+    \end{rSubsection}
+    \begin{rSubsection}{}{}{\bf Problem Solving}{\hfill \em August 2023 - Present}
+        \item Solved 450+ problems on LeetCode using Python and C++, now focusing on Codeforces for competitive programming.
+    \end{rSubsection}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%   TECHNICAL STRENGTHS SECTION
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{Technical Strengths}
 
-	\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-		Technical Skills \ & Python, C, C++, Java, React.js, MySQL \\
-		Technologies & HTML5, CSS, Latex \\
-		Version Control & Github
-	\end{tabular}		
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+        Programming Languages & Python, C, C++, Java, x86 Assembly \\
+        Web Technologies & HTML5, CSS, React.js \\
+        Version Control & GitHub
+    \end{tabular}       
 
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
-%	EXAMPLE SECTION
-%----------------------------------------------------------------------------------------
-
-%\begin{rSection}{Section Name}
-
-	%Section content\ldots
-
-%\end{rSection}
-
-%----------------------------------------------------------------------------------------
 
 \end{document}
+
+% Teaching assistant for cs250, computer architecture. Held labs with other TAs for 2 hours every week, where I helped and graded students on their projects. Also had 2-hour office hours every week.
+
+% Teaching assistant for cs182, foundations of computer science. Graded around 400 submissions almost every week, held 2-hour office hours every week, where I helped students with their homework. Along with a GTA, held a PSO session with about 30 students every week where we explained supplementary problems to help students learn based on examples. 
